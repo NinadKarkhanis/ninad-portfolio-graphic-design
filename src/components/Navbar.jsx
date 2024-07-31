@@ -15,7 +15,7 @@ const Navbar = () => {
     <div className='flex flex-shrink-0 items-center'>
      <img className="mx-2 w-10" src={logo} alt="logo"></img>
     </div>
-    <div className="m-4 sm:m-6 md:m-8 lg:m-10 flex flex-wrap items-center justify-center gap-4 text-neutral-400">
+    <div className="m-4 sm:m-6 md:m-8 lg:m-10 flex flex-wrap items-center justify-center gap-4 text-neutral-400 text-sm">
   <Link 
     className="cursor-pointer hover:text-purple-300 hover:glow" 
     to="about" 
