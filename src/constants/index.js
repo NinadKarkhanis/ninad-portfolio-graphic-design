@@ -56,32 +56,38 @@ export const EDUCATION = [
 
 export const PROJECTS = [
   {
-    title: "Coming soon",
+    title: "Layer 2 - Security.",
     image: project1,
     description:
-      "Coming soon",
-    technologies: ["Coming soon", "Coming soon"],
+      "In this virtual lab, I have implemented Layer 2 security on the switch device. A Kali Linux machine within the network was used to conduct various attacks. We then applied appropriate security measures on the switch to prevent these attacks.",
+    technologies: ["Kali Linux", "Cisco Switch","Cisco Router"],
+    
+    title: "Layer 2 - Security.",
+    image: project1,
+    description:
+      "In this virtual lab, I have implemented Layer 2 security on the switch device. A Kali Linux machine within the network was used to conduct various attacks. We then applied appropriate security measures on the switch to prevent these attacks.",
+    technologies: ["Kali Linux", "Cisco Switch","Cisco Router"],
   },
   {
-    title: "Coming soon",
+    title: "Securing Network Traffic with Palo Alto Firewall and NAT configuration.",
     image: project2,
     description:
-      "Coming soon",
-    technologies: ["Coming soon"],
+      "In this virtual lab, I have configured policies on a Palo Alto Firewall to ensure that only the required traffic is allowed to flow in and out. Routing protocols such as OSPF and RIP are used to establish and maintain network connectivity. Additionally, we have implemented various types of NAT. For example, internal machines can access external networks using a public IP address. Furthermore, we set up policies to allow external access to services in the DMZ",
+    technologies: ["Palo Alto Firewall","Cisco Switch","Cisco Router"],
   },
   {
-    title: "Coming soon",
+    title: "Palo Alto Firewall Failover.",
     image: project3,
     description:
-      "Coming soon",
-    technologies: ["Coming soon"],
+      "In this virtual lab, I have configured failover on the Palo Alto Firewall. This ensures that if one firewall fails for any reason, the other will take over seamlessly, preventing downtime and avoiding network inconvenience.",
+    technologies: ["Palo Alto Firewall","Cisco Switch","Cisco Router"],
   },
   {
-    title: "Coming soon",
+    title: "Securing Network Traffic with CheckPoint Firewall and NAT configuration.",
     image: project4,
     description:
-      "Coming soon",
-    technologies: ["Coming soon"],
+      "In this virtual lab, I have configured policies on a Checkpoint Firewall to ensure that only the required traffic is allowed to flow in and out. Routing protocols such as OSPF, EIGRP, and RIP are used to establish and maintain network connectivity. Additionally, we have implemented various types of NAT. For example, internal machines can access external networks using a public IP address. Furthermore, we set up policies to allow external access to services in the DMZ",
+    technologies: ["Checkpoint Firewall","Cisco Switch","Cisco Router"],
   },
 ];
 

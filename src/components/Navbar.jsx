@@ -9,8 +9,8 @@ const Navbar = () => {
        
     </div>
     <div className='m-8 flex items-center justify-center gap-4 text-2xl'>
-        <FaLinkedin></FaLinkedin>
-        <FaGithub></FaGithub>
+        <a  href='https://www.linkedin.com/in/ninad-karkhanis-121a7625a'><FaLinkedin ></FaLinkedin></a>
+        <a  href='https://github.com/NinadKarkhanis'><FaGithub></FaGithub></a>
     </div>
   </nav>
 }
