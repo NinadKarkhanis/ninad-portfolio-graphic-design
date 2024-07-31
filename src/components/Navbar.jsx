@@ -1,78 +1,60 @@
-import React, { useState, useEffect } from 'react';
+import React from 'react';
 import logo from "../assets/logo.png";
-import { FaLinkedin, FaGithub, FaBars, FaTimes } from 'react-icons/fa';
+import { FaLinkedin, FaGithub } from 'react-icons/fa';
 import { Link } from 'react-scroll';
 import './Navbar.css';
 import { motion } from "framer-motion";
 
 const Navbar = () => {
-  const [isMobile, setIsMobile] = useState(window.innerWidth < 1033);
-  const [isOpen, setIsOpen] = useState(false);
-
-  const handleResize = () => {
-    setIsMobile(window.innerWidth < 1033);
-  };
-
-  useEffect(() => {
-    window.addEventListener('resize', handleResize);
-    return () => {
-      window.removeEventListener('resize', handleResize);
-    };
-  }, []);
-
-  const toggleMenu = () => {
-    setIsOpen(!isOpen);
-  };
+  const [isOpen, setIsOpen] = React.useState(false);
 
   return (
     <motion.nav 
-      whileInView={{ opacity: 1, y: 0 }}
-      initial={{ opacity: 0, y: -100 }}
-      transition={{ duration: 0.5 }}
-      className="mb-20 flex items-center justify-between py-6"
+      whileInView={{ opacity: 1, y: 0 }} 
+      initial={{ opacity: 0, y: -100 }} 
+      transition={{ duration: 0.5 }} 
+      className="navbar mb-20 py-6"
     >
-      <div className='flex flex-shrink-0 items-center'>
-        <img className="mx-2 w-10" src={logo} alt="logo" />
-      </div>
-      
-      {isMobile ? (
-        <div className="relative">
-          <button onClick={toggleMenu} className="text-neutral-400 text-2xl focus:outline-none">
-            {isOpen ? <FaTimes /> : <FaBars />}
-          </button>
-          {isOpen && (
-            <div className="absolute right-0 top-12 mt-2 w-48 bg-white rounded-md shadow-lg py-1 z-20">
-              <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="about" smooth={true} duration={500} onClick={toggleMenu}>About Me</Link>
-              <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="edu" smooth={true} duration={500} onClick={toggleMenu}>Education</Link>
-              <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="exp" smooth={true} duration={500} onClick={toggleMenu}>Work Experience</Link>
-              <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="tech" smooth={true} duration={500} onClick={toggleMenu}>Technologies</Link>
-              <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="proj" smooth={true} duration={500} onClick={toggleMenu}>Projects</Link>
-              <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="con" smooth={true} duration={500} onClick={toggleMenu}>Contact Me</Link>
-              <div className="flex items-center justify-center gap-4 text-2xl text-neutral-400 mt-2">
-                <a className="hover:text-purple-300" href='https://www.linkedin.com/in/ninad-karkhanis-121a7625a'><FaLinkedin /></a>
-                <a className="hover:text-purple-300" href='https://github.com/NinadKarkhanis'><FaGithub /></a>
-              </div>
-            </div>
-          )}
+      <div className='flex items-center'>
+        <img className="logo mx-2 w-10" src={logo} alt="logo" />
+        <div className="hidden md:flex items-center gap-6 ml-4">
+          <Link className="nav-link" to="about" smooth={true} duration={500}>About Me</Link>
+          <Link className="nav-link" to="edu" smooth={true} duration={500}>Education</Link>
+          <Link className="nav-link" to="exp" smooth={true} duration={500}>Work Experience</Link>
+          <Link className="nav-link" to="tech" smooth={true} duration={500}>Technologies</Link>
+          <Link className="nav-link" to="proj" smooth={true} duration={500}>Projects</Link>
+          <Link className="nav-link" to="con" smooth={true} duration={500}>Contact Me</Link>
         </div>
-      ) : (
-        <>
-          <div className="m-4 sm:m-6 md:m-8 lg:m-10 flex flex-wrap items-center justify-center gap-4 text-neutral-400 text-sm">
-            <Link className="cursor-pointer hover:text-purple-300 hover:glow" to="about" smooth={true} duration={500}>About Me</Link>
-            <Link className="cursor-pointer hover:text-purple-300 hover:glow" to="edu" smooth={true} duration={500}>Education</Link>
-            <Link className="cursor-pointer hover:text-purple-300 hover:glow" to="exp" smooth={true} duration={500}>Work Experience</Link>
-            <Link className="cursor-pointer hover:text-purple-300 hover:glow" to="tech" smooth={true} duration={500}>Technologies</Link>
-            <Link className="cursor-pointer hover:text-purple-300 hover:glow" to="proj" smooth={true} duration={500}>Projects</Link>
-            <Link className="cursor-pointer hover:text-purple-300 hover:glow" to="con" smooth={true} duration={500}>Contact Me</Link>
+        <div className='hidden md:flex items-center gap-4 ml-auto text-2xl text-neutral-400'>
+          <a className="social-icon" href='https://www.linkedin.com/in/ninad-karkhanis-121a7625a'><FaLinkedin /></a>
+          <a className="social-icon" href='https://github.com/NinadKarkhanis'><FaGithub /></a>
+        </div>
+      </div>
+      <div className="md:hidden flex items-center ml-auto">
+        <button onClick={() => setIsOpen(!isOpen)} aria-label="Toggle menu" className="text-2xl text-neutral-400">
+          {isOpen ? (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M6 18L18 6M6 6l12 12" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" className="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+              <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M4 6h16M4 12h16M4 18h16" />
+            </svg>
+          )}
+        </button>
+        {isOpen && (
+          <div className="absolute top-16 right-0 bg-neutral-100 p-4 w-48 rounded-md shadow-lg z-20">
+            <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="about" smooth={true} duration={500} onClick={() => setIsOpen(false)}>About Me</Link>
+            <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="edu" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Education</Link>
+            <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="exp" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Work Experience</Link>
+            <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="tech" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Technologies</Link>
+            <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="proj" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Projects</Link>
+            <Link className="block px-4 py-2 text-sm text-neutral-700 hover:bg-gray-100" to="con" smooth={true} duration={500} onClick={() => setIsOpen(false)}>Contact Me</Link>
           </div>
-          <div className='m-8 flex items-center justify-center gap-4 text-2xl text-neutral-400'>
-            <a className="hover:text-purple-300" href='https://www.linkedin.com/in/ninad-karkhanis-121a7625a'><FaLinkedin /></a>
-            <a className="hover:text-purple-300" href='https://github.com/NinadKarkhanis'><FaGithub /></a>
-          </div>
-        </>
-      )}
+        )}
+      </div>
     </motion.nav>
   );
-};
+}
 
 export default Navbar;

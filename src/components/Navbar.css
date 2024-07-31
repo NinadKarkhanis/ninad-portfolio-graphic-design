@@ -2,21 +2,43 @@
     text-shadow: 0 0 5px rgba(255, 255, 255, 0), 0 0 10px rgb(255, 0, 255), 0 0 15px rgba(255, 255, 255, 0);
   }
   
-  /* Add these styles to Navbar.css */
-@media (max-width: 1032px) {
-  .menu-item {
+.navbar {
+  display: flow-root;
+  flex-direction: column;
+}
+
+.logo {
+  flex-shrink: 0;
+}
+
+.nav-link {
+  cursor: pointer;
+  color: #4b5563; /* Neutral-400 */
+  transition: color 0.3s, text-shadow 0.3s;
+}
+
+.nav-link:hover {
+  color: #a855f7; /* Purple-300 */
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
+}
+
+.social-icon {
+  color: #4b5563; /* Neutral-400 */
+  transition: color 0.3s;
+}
+
+.social-icon:hover {
+  color: #a855f7; /* Purple-300 */
+}
+
+@media (min-width: 768px) {
+  .md\:hidden {
     display: none;
-  }
-  .hamburger {
-    display: block;
   }
 }
 
-@media (min-width: 1033px) {
-  .hamburger {
+@media (max-width: 767px) {
+  .md\:flex {
     display: none;
-  }
-  .menu-item {
-    display: flex;
   }
 }
