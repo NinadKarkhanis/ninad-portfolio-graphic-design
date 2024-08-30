@@ -4,7 +4,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 
-export const HERO_CONTENT = `As a cybersecurity enthusiast, I am deeply passionate about the field and have extensive hands-on experience with a variety of network security devices. My expertise includes working with Cisco routers and switches, which has given me a solid foundation in networking fundamentals and advanced configurations. Additionally, I have practical experience with Palo Alto firewalls, Checkpoint firewalls, and ASA (Adaptive Security Appliance), allowing me to effectively manage and secure network environments. I am also familar with Kali Linux and Wireshark, enhancing my ability to conduct security assessments and analyze network traffic. `;
+export const HERO_CONTENT = `A graphic designer skilled in Photoshop, Illustrator, Figma, Blender, and Canva. I specialize in creating social media posts, branding materials, and digital interfaces that are not only visually appealing but also meaningful. `;
 
 export const ABOUT_TEXT = `I have completed my Bachelor's in Computer Applications from Somaiya Vidyavihar University. Currently, I am pursuing a Cyber Security course from Connecting Cybernetworks in Andheri. Through this course, I have learned about networking fundamentals and gained hands-on experience with switches, routers, and firewalls, including Check Point and Palo Alto.
 
@@ -33,16 +33,16 @@ export const EDUCATION = [
     role: "Bachelor Of Computer Applications",
     company: "S K Somaiya College, Vidyavihar",
   },
-  {
-    year: "2024",
-    role: "AWS re/start : Fundamentals Of Cloud Services",
-    company: "Anudip Foundation, Online",
-  },
-  {
-    year: "2023 - 2024",
-    role: "Cyber Security Course",
-    company: "Connecting Cyber Networks, Andheri",
-  },
+  // {
+  //   year: "2024",
+  //   role: "AWS re/start : Fundamentals Of Cloud Services",
+  //   company: "Anudip Foundation, Online",
+  // },
+  // {
+  //   year: "2023 - 2024",
+  //   role: "Cyber Security Course",
+  //   company: "Connecting Cyber Networks, Andheri",
+  // },
   {
     year: "2021",
     role: "Higher Secondary Certificate",
@@ -62,6 +62,7 @@ export const PROJECTS = [
     description:
       "In this virtual lab, I have implemented Layer 2 security on the switch device. A Kali Linux machine within the network was used to conduct various attacks. We then applied appropriate security measures on the switch to prevent these attacks.",
     technologies: ["Kali Linux", "Cisco Switch","Cisco Router"],
+    url:"https://docs.google.com/document/d/15V2XyK6Qc4hN6vw9eE6l7mkSTlBH6U6_z5x5pYB_ZSg/edit?usp=sharing"
   },
   {
     title: "Securing Network Traffic with Palo Alto Firewall and NAT configuration.",
@@ -69,6 +70,7 @@ export const PROJECTS = [
     description:
       "In this virtual lab, I have configured policies on a Palo Alto Firewall to ensure that only the required traffic is allowed to flow in and out. Routing protocols such as OSPF and RIP are used to establish and maintain network connectivity. Additionally, we have implemented various types of NAT. For example, internal machines can access external networks using a public IP address. Furthermore, we set up policies to allow external access to services in the DMZ",
     technologies: ["Palo Alto Firewall","Cisco Switch","Cisco Router"],
+    url:"https://docs.google.com/document/d/1LdYLoItBoDqih1LwvG19h86Rz9vrmgEAL_K5Bqq6vqY/edit?usp=sharing"
   },
   {
     title: "Palo Alto Firewall Failover.",
@@ -76,6 +78,7 @@ export const PROJECTS = [
     description:
       "In this virtual lab, I have configured failover on the Palo Alto Firewall. This ensures that if one firewall fails for any reason, the other will take over seamlessly, preventing downtime and avoiding network inconvenience.",
     technologies: ["Palo Alto Firewall","Cisco Switch","Cisco Router"],
+    url:"https://docs.google.com/document/d/1vG5Ci0INg166FzqqZ6jK3CY5m3_1DS5jbuTb2KBTQWI/edit?usp=sharing"
   },
   {
     title: "Securing Network Traffic with CheckPoint Firewall and NAT configuration.",
@@ -83,6 +86,7 @@ export const PROJECTS = [
     description:
       "In this virtual lab, I have configured policies on a Checkpoint Firewall to ensure that only the required traffic is allowed to flow in and out. Routing protocols such as OSPF, EIGRP, and RIP are used to establish and maintain network connectivity. Additionally, we have implemented various types of NAT. For example, internal machines can access external networks using a public IP address. Furthermore, we set up policies to allow external access to services in the DMZ",
     technologies: ["Checkpoint Firewall","Cisco Switch","Cisco Router"],
+    url:"https://docs.google.com/document/d/1q3c7Hc1j7iZVXbCj5D_DTe-5_Grw3ka-vExP2KF5dUE/edit?usp=sharing"
   },
   {
     title: "Treasure Quest",
@@ -90,6 +94,7 @@ export const PROJECTS = [
     description:
       "A cross-platform 2D platformer game designed for competitive play, where players compete for the highest score or the fastest completion time. This project was developed as part of my final year project.",
     technologies: ["C#", "Unity"],
+    url:"https://github.com/NinadKarkhanis/TreasureQuest"
   }
 ];
 

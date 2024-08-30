@@ -1,5 +1,6 @@
 import { PROJECTS } from "../constants"
 import { motion } from "framer-motion";
+import { TbClick } from "react-icons/tb";
 
 const Projects = () => {
   return <div className='border-b border-neutral-900 pb-4'>
@@ -25,9 +26,17 @@ const Projects = () => {
             className="w-full max-w-xl lg:w-3/4">
             <h6 className="mb-2 font-semibold">{project.title}</h6>
             <p className="mb-4 text-neutral-400">{project.description}</p>
+            <div className="mt-4 mb-4 text-purple-500 font-extralight flex-wrap">
+                <a href={project.url} 
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-block rounded bg-purple-500 px-4 py-2 text-white font-normal hover:bg-purple-700 transition duration-300 ease-in-out"
+                >Click To Know More </a>
+            </div>
             {project.technologies.map((tech,index)=>(
                 <span key={index} className="mr-2 rounded bg-neutral-900 px-2 py-1 text-sm font-medium text-purple-500">{tech}</span>
             ))}
+            
             </motion.div>
         </div>
         ))}
