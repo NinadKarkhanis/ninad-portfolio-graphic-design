@@ -34,7 +34,7 @@ const breakpointColumnsObj = {
   default: 4,
   1100: 3,
   700: 2,
-  500: 1
+  500: 2
 };
 
 const ProjectGallery = () => {
@@ -45,7 +45,7 @@ const ProjectGallery = () => {
     
     
     <div className="container mx-auto px-4">
-         <div className ="mb-8 flex flex-wrap lg:justify-center">
+      <div className ="mb-8 flex justify-center">
       <motion.h2 
     whileInView={{opacity: 1, y:0}}
     initial={{opacity:0,y:-100}}
