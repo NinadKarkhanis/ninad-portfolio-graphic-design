@@ -10,7 +10,7 @@ const Navbar = () => {
 
   return (
     <nav 
-      className="navbar mb-20 py-6"
+      
     >
       <div className='flex items-center'>
         <img className="logo mx-2 w-10" src={logo} alt="logo" />
