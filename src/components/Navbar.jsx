@@ -9,8 +9,11 @@ const Navbar = () => {
   const [isOpen, setIsOpen] = React.useState(false);
 
   return (
-    <nav 
-      
+    <motion.nav 
+      whileInView={{ opacity: 1, y: 0 }} 
+      initial={{ opacity: 0, y: -100 }} 
+      transition={{ duration: 0.5 }} 
+      className="navbar mb-20 py-6"
     >
       <div className='flex items-center'>
         <img className="logo mx-2 w-10" src={logo} alt="logo" />
@@ -49,7 +52,7 @@ const Navbar = () => {
           </div>
         )}
       </div>
-    </nav>
+    </motion.nav>
   );
 }
 
