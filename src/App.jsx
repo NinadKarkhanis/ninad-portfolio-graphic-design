@@ -7,6 +7,10 @@ import Exp from './components/Exp'
 import Projects from './components/Projects'
 import Education from './components/Education'
 import Contact from './components/Contact'
+import Proj from './components/project'
+import Grid from'./components/grid'
+import ReviewSection from './components/ReviewSection'
+
 
 const App = () => {
   
@@ -17,20 +21,20 @@ const App = () => {
     
     <div className="overflow-x-hidden text-neutral-300 antialiased selection:bg-cyan-300 selection:text-cyan-900">
       <div className="fixed top-0 -z-10 h-full w-full">
-      <div class="absolute top-0 z-[-2] h-screen w-screen bg-neutral-950 bg-[radial-gradient(ellipse_80%_80%_at_50%_-20%,rgba(120,119,198,0.3),rgba(255,255,255,0))]">
-      </div>
-      </div>
+      <div class="relative h-full w-full bg-slate-950"><div class="absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px]"></div></div>
+      </div>  
           
           
           <div className="container mx-auto px-8">
           <Navbar/>
           <Hero/>
-          <section id="about"><AboutMe/></section>
-          <section id="edu"><Education/></section>
-          <section id="exp"><Exp/></section>
           <section id="tech"><Technologies/></section>
-          <section id="proj"><Projects/></section>
+          <section id="proj"><Grid/></section>
+          <section id="exp"><Exp/></section>
+          <section id="edu"><Education/></section>
           <section id="con"><Contact/></section>
+          <section id="rev"><ReviewSection/></section>
+          
          
           </div>
           

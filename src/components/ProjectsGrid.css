@@ -1,0 +1,39 @@
+.projects-container {
+    padding: 16px;
+    text-align: center;
+  }
+  
+  .projects-title {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr)); /* Adjusted for more flexibility */
+    gap: 16px;
+    justify-items: center;
+  }
+  
+  .project-card {
+    background: #7a06c8;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    width: 100%;
+    max-width: 100%; /* Ensures the cards are responsive */
+  }
+  
+  .project-card img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensures the image scales while maintaining aspect ratio */
+    border-bottom: 2px solid #3d0946;
+  }
+  
+  .project-card h3 {
+    margin: 16px 0;
+    font-size: 1.2rem;
+  }
+  

@@ -4,7 +4,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 
-export const HERO_CONTENT = `As a cybersecurity enthusiast, I am deeply passionate about the field and have extensive hands-on experience with a variety of network security devices. My expertise includes working with Cisco routers and switches, which has given me a solid foundation in networking fundamentals and advanced configurations. Additionally, I have practical experience with Palo Alto firewalls, Checkpoint firewalls, and ASA (Adaptive Security Appliance), allowing me to effectively manage and secure network environments. I am also familar with Kali Linux and Wireshark, enhancing my ability to conduct security assessments and analyze network traffic. `;
+export const HERO_CONTENT = `A graphic designer skilled in Photoshop, Illustrator, Figma, Blender, and Canva. I specialize in creating social media posts, branding materials, and digital interfaces that are not only visually appealing but also meaningful. `;
 
 export const ABOUT_TEXT = `I have completed my Bachelor's in Computer Applications from Somaiya Vidyavihar University. Currently, I am pursuing a Cyber Security course from Connecting Cybernetworks in Andheri. Through this course, I have learned about networking fundamentals and gained hands-on experience with switches, routers, and firewalls, including Check Point and Palo Alto.
 
@@ -33,16 +33,16 @@ export const EDUCATION = [
     role: "Bachelor Of Computer Applications",
     company: "S K Somaiya College, Vidyavihar",
   },
-  {
-    year: "2024",
-    role: "AWS re/start : Fundamentals Of Cloud Services",
-    company: "Anudip Foundation, Online",
-  },
-  {
-    year: "2023 - 2024",
-    role: "Cyber Security Course",
-    company: "Connecting Cyber Networks, Andheri",
-  },
+  // {
+  //   year: "2024",
+  //   role: "AWS re/start : Fundamentals Of Cloud Services",
+  //   company: "Anudip Foundation, Online",
+  // },
+  // {
+  //   year: "2023 - 2024",
+  //   role: "Cyber Security Course",
+  //   company: "Connecting Cyber Networks, Andheri",
+  // },
   {
     year: "2021",
     role: "Higher Secondary Certificate",
