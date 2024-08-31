@@ -17,7 +17,7 @@ const Technologies = () => {
   return(
   <div className="container mx-auto px-4">
     <div className="mb-8 flex justify-center">
-    <motion.h2 
+    <motion.h2  
     whileInView={{opacity: 1, y:0}}
     initial={{opacity:0,y:-100}}
     transition={{duration:1.5}}
