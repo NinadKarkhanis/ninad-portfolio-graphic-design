@@ -5,7 +5,7 @@
   
   .projects-title {
     font-size: 1rem;
-    margin-bottom: 20px;
+    margin-bottom: 10px;
   }
   
   .projects-grid {
@@ -29,7 +29,7 @@
     width: 100%;
     height: auto;
     object-fit: cover; /* Ensures the image scales while maintaining aspect ratio */
-    border-bottom: 2px solid #3d0946;
+    border-bottom: 1px solid #3d0946;
   }
   
   .project-card h3 {

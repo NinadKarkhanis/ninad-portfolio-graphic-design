@@ -1,9 +1,10 @@
-.hover\:glow:hover {
-    text-shadow: 0 0 5px rgba(255, 255, 255, 0), 0 0 10px rgb(255, 0, 255), 0 0 15px rgba(255, 255, 255, 0);
-  }
-  
 .navbar {
-  display: flow-root;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  display: flex;
   flex-direction: column;
 }
 
@@ -13,32 +14,34 @@
 
 .nav-link {
   cursor: pointer;
-  color: #4b5563; /* Neutral-400 */
   transition: color 0.3s, text-shadow 0.3s;
 }
 
 .nav-link:hover {
-  color: #a855f7; /* Purple-300 */
   text-shadow: 0 0 5px rgba(0, 0, 0, 0.3);
 }
 
 .social-icon {
-  color: #4b5563; /* Neutral-400 */
   transition: color 0.3s;
 }
 
-.social-icon:hover {
-  color: #a855f7; /* Purple-300 */
-}
-
-@media (min-width: 768px) {
-  .md\:hidden {
-    display: none;
-  }
+/* Add this new rule to push down the main content */
+body {
+  padding-top: 64px; /* Adjust this value based on your navbar height */
 }
 
 @media (max-width: 767px) {
   .md\:flex {
+    display: none;
+  }
+  
+  body {
+    padding-top: 56px; /* Adjust for mobile navbar height if different */
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:hidden {
     display: none;
   }
 }
