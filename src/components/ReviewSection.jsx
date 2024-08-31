@@ -6,7 +6,7 @@ import "./ReviewSection.css";
 const reviews = [
     {
         id: 1,
-        name: "John Doe",
+        name: "Obi Wan",
         profilePic: 'https://i.postimg.cc/28zQnqGb/d2172acc2957df5854bce88199d0dea7.jpg',
         review: "This portfolio is amazing! The design is clean and the projects are top-notch."
     },
