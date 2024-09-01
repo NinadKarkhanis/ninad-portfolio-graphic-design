@@ -6,9 +6,9 @@ import "./ReviewSection.css";
 const reviews = [
     {
         id: 1,
-        name: "Obi Wan",
-        profilePic: 'https://i.postimg.cc/28zQnqGb/d2172acc2957df5854bce88199d0dea7.jpg',
-        review: "This portfolio i amazing! The design is clean and the projects are top-notch."
+        name: "Om Chaturvedi (Chartered Studies)",
+        profilePic: 'https://i.postimg.cc/4yD37dRB/d75fd83c-65c2-4be3-86e4-e8eab71e20ef.jpg',
+        review: "Ninad is an exceptional designer & a skilled practioner ! Working with him since past 2 years and he is just Awesome !"
     },
     {
         id: 2,
