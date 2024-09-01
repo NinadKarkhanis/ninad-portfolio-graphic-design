@@ -23,6 +23,7 @@ const Navbar = () => {
     { to: "exp", label: "Work Experience" },
     { to: "edu", label: "Education" },
     { to: "con", label: "Contact Me" },
+    { to: "rev", label: "Reviews" }
   ];
 
   return (

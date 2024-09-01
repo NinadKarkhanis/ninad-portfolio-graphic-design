@@ -28,6 +28,7 @@ const projects = [
   { id: 22, title: 'Spaceship Animation', image: 'https://i.postimg.cc/3J7spZzX/ship.gif', description: '' },
   { id: 23, title: 'Personalized Vector Art', image: 'https://i.postimg.cc/qqBGBgZ3/523fa06f-c448-4184-9ecd-97eb17070d72.jpg', description: '' },
   { id: 24, title: 'Art Gallery App UI Screen', image: 'https://i.postimg.cc/j5qXtZ5X/atrovox-app-ui.gif', description: '' },
+  { id: 25, title: 'Workshop Advertisment', image: 'https://i.postimg.cc/QdxMFv2L/White-Black-Rounded-Modern-Workshop-Event-Instagram-Post-1.png', description: '' },
 ];
 
 const breakpointColumnsObj = {
