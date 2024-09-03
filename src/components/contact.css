@@ -1,0 +1,104 @@
+/* General Form Styling */
+form {
+  background-color: #1f1f1f; /* Dark background */
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(230, 0, 207, 0.581); /* Soft shadow */
+  display: flex;
+  flex-direction: column;
+  max-width: 500px; /* Limit the width */
+  margin: 0 auto; /* Center the form */
+}
+
+/* Input and Textarea Styling */
+form input[type="text"],
+form input[type="email"],
+form textarea {
+  background-color: #2c2c2c; /* Darker background for inputs */
+  color: #ffffff; /* White text */
+  border: 1px solid #444444; /* Subtle border */
+  border-radius: 4px;
+  padding: 12px;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+/* Label Styling */
+form label {
+  margin-bottom: 8px;
+  font-weight: bold;
+  color: #cccccc; /* Light gray for labels */
+}
+
+/* Submit Button Styling */
+form input[type="submit"] {
+  background-color: #6e036b; /* Bright accent color */
+  color: #ffffff; /* White text */
+  border: none;
+  border-radius: 4px;
+  padding: 12px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+/* Submit Button Hover Effect */
+form input[type="submit"]:hover {
+  background-color: #8807a5; /* Darker on hover */
+}
+
+/* Additional Contact Info */
+.text-center p {
+  margin: 20px 0;
+  font-size: 16px;
+}
+
+.text-center a {
+  color: #00bcd4; /* Cyan color */
+  text-decoration: none;
+  border-bottom: 1px solid #00bcd4; /* Cyan border */
+  transition: color 0.3s ease;
+}
+
+/* Link Hover Effect */
+.text-center a:hover {
+  color: #ff5722; /* Change to accent color on hover */
+  border-bottom-color: #ff22f0; /* Change border color */
+}
+
+/* H2 Title Styling */
+h2 {
+  color: #ffffff;
+  margin-bottom: 20px;
+  font-size: 2.5rem;
+}
+
+/* Popup Message */
+.popup {
+    position: fixed;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #323232; /* Dark background */
+    color: #ffffff; /* White text */
+    padding: 10px 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    z-index: 1000;
+    animation: fadeInOut 3s ease-in-out;
+  }
+  
+  /* Animation for Popup */
+  @keyframes fadeInOut {
+    0%, 100% { opacity: 0; }
+    10%, 90% { opacity: 1; }
+  }
+
+  /* Error Message Styling */
+.error-message {
+    color: #ff5722; /* Red or any other color for error */
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+  }
+  

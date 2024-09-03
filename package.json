@@ -12,6 +12,8 @@
   "dependencies": {
     "@coreui/icons": "^3.0.1",
     "@coreui/icons-react": "^2.3.0",
+    "@emailjs/browser": "^4.4.1",
+    "emailjs": "^4.0.3",
     "framer-motion": "^11.3.19",
     "lucide-react": "^0.436.0",
     "react": "^18.3.1",
