@@ -13,15 +13,15 @@ const reviews = [
     {
         id: 2,
         name: "Dan",
-        profilePic: "https://i.postimg.cc/tJSb3nv0/Unknown-person.jpg",
+        profilePic: "https://i.postimg.cc/tJSb3nv0/Unknown-person.jpg ",
         review: "Ninad is a Superb Designer. The design he made is really good and top notch. I got exactly what I wanted. Hope I get opportunity to work with him again !"
     },
-    {
-        id: 3,
-        name: "Alice Johnson",
-        profilePic: "profile3.jpg",
-        review: "The attention to detail in the design is superb."
-    },
+    // {
+    //     id: 3,
+    //     name: "Alice Johnson",
+    //     profilePic: "profile3.jpg",
+    //     review: "The attention to detail in the design is superb."
+    // },
     
     // Add more reviews as needed
 ];
