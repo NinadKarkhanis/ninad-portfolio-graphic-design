@@ -4,7 +4,7 @@ import project3 from "../assets/projects/project-3.jpg";
 import project4 from "../assets/projects/project-4.jpg";
 import project5 from "../assets/projects/project-5.jpg";
 
-export const HERO_CONTENT = `A graphic designer skilled in Photoshop, Illustrator, Figma, Blender, and Canva. I specialize in creating social media posts, branding materials, and digital interfaces that are not only visually appealing but also meaningful. `;
+export const HERO_CONTENT = `I'm a graphic designer skilled in creating diverse digital content, including  advertisements, UI screens, Mock ups, Simple 3D Animations and Fan art. I use tools like Photoshop, Illustrator, Figma, Canva, and Blender to bring creative ideas to life. `;
 
 export const ABOUT_TEXT = `I have completed my Bachelor's in Computer Applications from Somaiya Vidyavihar University. Currently, I am pursuing a Cyber Security course from Connecting Cybernetworks in Andheri. Through this course, I have learned about networking fundamentals and gained hands-on experience with switches, routers, and firewalls, including Check Point and Palo Alto.
 

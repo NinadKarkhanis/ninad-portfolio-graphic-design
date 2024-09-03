@@ -12,9 +12,9 @@ const reviews = [
     },
     {
         id: 2,
-        name: "Jane Smith",
-        profilePic: "profile2.jpg",
-        review: "A very professional presentation of work. Impressive!"
+        name: "Dan",
+        profilePic: "https://i.postimg.cc/tJSb3nv0/Unknown-person.jpg",
+        review: "Ninad is a Superb Designer. The design he made is really good and top notch. I got exactly what I wanted. Hope I get opportunity to work with him again !"
     },
     {
         id: 3,
