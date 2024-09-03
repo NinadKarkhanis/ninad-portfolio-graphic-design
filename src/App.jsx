@@ -10,6 +10,8 @@ import Contact from './components/Contact'
 import Proj from './components/project'
 import Grid from'./components/grid'
 import ReviewSection from './components/ReviewSection'
+import './components/scrollbar.css';
+
 
 
 const App = () => {
