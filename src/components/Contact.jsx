@@ -1,5 +1,6 @@
 import React, { useRef, useState } from 'react';
 import { CONTACT } from "../constants";
+import { motion } from "framer-motion";
 import emailjs from '@emailjs/browser';
 import './contact.css';
 
@@ -47,9 +48,17 @@ const Contact = () => {
 
   return (
     <div className='border-b border-neutral-900 pb-4'>
-      <h2 className="my-20 text-center text-4xl">Get In Touch</h2>
+      <motion.h2 
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: -50 }}
+      transition={{ duration: 1 }}
+      className="my-20 text-center text-4xl">Contact Me</motion.h2>
       
-      <div>
+      <motion.div
+      whileInView={{ opacity: 1, y: 0 }}
+      initial={{ opacity: 0, y: -50 }}
+      transition={{ duration: 1 }}
+      >
         <form ref={form} onSubmit={sendEmail}>
           <label>Name</label>
           <input type="text" name="user_name" required />
@@ -63,7 +72,7 @@ const Contact = () => {
           
           <input type="submit" value="Send" />
         </form>
-      </div>
+      </motion.div>
       
       {/* <div className="text-center tracking-tighter">
         <p className="my-4">{CONTACT.phoneNo}</p>
